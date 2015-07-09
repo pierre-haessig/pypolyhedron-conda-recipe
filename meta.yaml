@@ -1,0 +1,28 @@
+package:
+  name: pypolyhedron
+  version: 0.2.1
+
+source:
+  fn: polyhedron.tgz
+  md5: 93cfb2ac305e6792aebf0a4cf3e322c3
+  url: https://sysbio.ioc.ee/projects/polyhedron/src/polyhedron.tgz
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+
+  run:
+    - python
+    - numpy
+
+test:
+  imports:
+    - polyhedron
+
+about:
+  home: https://sysbio.ioc.ee/projects/polyhedron/
+  license: LGPL
+  summary: "PyPolyhedron is a Python interface to a C-library cddlib. cddlib is a C implementation of the Double Description Method for generating all vertices of a convex polyhedron in R^d given by a system of linear inequalities"
+
